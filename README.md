@@ -1,32 +1,86 @@
 # java-oop-exception-handling-relationships
 
-Java OOP, Exception Handling, and RelationshipsWelcome to the Java OOP, Exception Handling, and Relationships repository. This project serves as a comprehensive guide and code repository demonstrating core Object-Oriented Programming (OOP) concepts, robust error-handling mechanisms, and the various ways objects interact and relate to one another in Java.🚀 Features & Concepts Covered1. Object-Oriented Programming (OOP) PillarsEncapsulation: Hiding internal state and requiring all interaction to be performed through well-defined methods (getters/setters).Inheritance: Reusing code and creating hierarchies using the extends keyword.Polymorphism: Allowing objects to take on multiple forms (Method Overloading and Method Overriding).Abstraction: Hiding complex implementation details using abstract classes and interfaces.2. Object RelationshipsUnderstanding how classes connect is crucial for good software design. This repo models the three primary types of relationships:Relationship TypeStrengthDescriptionExampleAssociationWeakA loose relationship where objects have their own lifecycles and no owner.Driver and CarAggregationMediumA "has-a" relationship where the child can exist independently of the parent.Department and ProfessorCompositionStrongA "part-of" relationship where the child cannot exist without the parent.House and Room3. Exception HandlingA deep dive into writing resilient code that gracefully handles runtime errors.Checked Exceptions: Handled at compile-time (e.g., IOException).Unchecked Exceptions: Runtime exceptions (e.g., NullPointerException, ArithmeticException).Custom Exceptions: Creating domain-specific exceptions by extending Exception or RuntimeException.Best Practices: Effective use of try-catch-finally, throw, throws, and try-with-resources.📁 Project StructurePlaintextsrc/
-├── oop/
-│   ├── AbstractionDemo.java
-│   ├── EncapsulationDemo.java
-│   ├── InheritanceDemo.java
-│   └── PolymorphismDemo.java
-├── relationships/
-│   ├── Association/
-│   ├── Aggregation/
-│   └── Composition/
-└── exceptions/
-    ├── CustomException.java
-    ├── TryCatchDemo.java
-    └── ResourceManagement.java
-💻 Code ExamplesComposition Example (Strong Relationship)If the Engine dies when the Car is destroyed, it's Composition:Javaclass Engine {
-    // Engine implementation
-}
+If your repository is about **Java OOP concepts, Exception Handling, and Relationships (Inheritance, Aggregation, Composition)**, you can use a README like this:
 
-class Car {
-    private final Engine engine; // Car owns the Engine
+# Java OOP, Exception Handling & Relationships
 
-    public Car() {
-        this.engine = new Engine(); // Created together
-    }
-}
-Custom Exception ExampleJavapublic class InsufficientFundsException extends Exception {
-    public InsufficientFundsException(String message) {
-        super(message);
-    }
-}
+This repository contains Java programs demonstrating fundamental Object-Oriented Programming (OOP) concepts, exception handling techniques, and class relationships commonly used in software development.
+
+## Topics Covered
+
+### Object-Oriented Programming (OOP)
+
+* Classes and Objects
+* Constructors
+* Encapsulation
+* Inheritance
+* Polymorphism
+* Method Overriding
+* Abstraction
+* Interfaces
+
+### Exception Handling
+
+* `try`, `catch`, and `finally` blocks
+* Throwing exceptions using `throw`
+* Declaring exceptions using `throws`
+* Custom Exception Classes
+* Checked and Unchecked Exceptions
+* Exception Propagation
+
+### Relationships Between Classes
+
+* **Inheritance (IS-A Relationship)**
+
+  * Demonstrates code reuse and hierarchical relationships.
+
+* **Aggregation (HAS-A Relationship)**
+
+  * Represents a weak ownership relationship where objects can exist independently.
+
+* **Composition (Strong HAS-A Relationship)**
+
+  * Represents strong ownership where the contained object's lifecycle depends on the parent object.
+
+## Learning Objectives
+
+* Understand the core principles of Java OOP.
+* Learn how to design classes using proper relationships.
+* Handle runtime errors effectively using exception handling.
+* Create custom exceptions for application-specific scenarios.
+* Build maintainable and reusable Java applications.
+
+## Technologies Used
+
+* Java
+* Object-Oriented Programming Concepts
+* Java Exception Handling Framework
+
+## Repository Structure
+
+```text
+src/
+├── inheritance/
+├── aggregation/
+├── composition/
+├── exceptionhandling/
+├── customexceptions/
+└── interfaces/
+```
+
+## Example Concepts Implemented
+
+* Student and Course Management System
+* Employee Payroll System
+* Online Course Management
+* File Upload Validation with Custom Exceptions
+* Banking and Account Management Examples
+
+## Purpose
+
+This repository was created for educational purposes to practice and understand Java OOP principles, class relationships, and exception handling through practical examples and exercises.
+
+---
+
+**Author:** Nayana Prabhashwara
+**Language:** Java ☕
